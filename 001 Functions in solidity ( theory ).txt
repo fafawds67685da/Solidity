@@ -1,0 +1,18 @@
+threre are two types of categories on which a function can be differentiated , 
+1. Accessibility
+2. Data handling
+
+when we talk about Accessibility , we have 4 differrnt kinds of accessibility modes that the solidity language offers us
+1. Public , As the name suggests , when a function is declared public , it can be accessible from anywhere , that is either outside the contract , within the contract or from any other contract , thorugh inheritance or interface
+2. Private , Again as the name suggests , when a function is declared private , it can only be accessed within the function , it cant be access outside the contract , niether by the user directly or from another contract
+3. Internal ,  Again as the name suggests , when a function is declared as internal , it can only be accessed within the contract , a lot alike private
+4. External , Again as the name suggests , when a function is declared external , it can now be only called from outside the contract , However it can be called within the contract using a exception case , which is by using this keyword
+
+so that was all about Acessibility of solidity function
+
+now let us talk about another category on which they can be differrntiated , which is how they handle data
+1. view function , As the name suggests , a view function is a kind of function which was designed to view or return the value of a state variable , it is restricted or prohibited to alter / change or update the value of state variable , but it can change the value of a local variable , defined and initialised within its braces
+
+2. Another type is pure functions , these types of functions are used to handle the situation where we have to use function for some logical computations , or simply when we have to perform any action or calculation on the state variable , so what we do is we pass parameters to it , pure function is the only function in solidity that can have parameters , and can perform certain calculation and return the output .
+
+usually We call a pure function from a iew function as view function do not require any paramters , so it can easily be called from the user , which can then call the pre function 
